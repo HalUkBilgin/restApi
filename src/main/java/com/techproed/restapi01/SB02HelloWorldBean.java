@@ -24,6 +24,7 @@ public class SB02HelloWorldBean {
 	public void setMessageNumber(int messageNumber) {
 		this.messageNumber = messageNumber;
 	}
+	
 	@Override
 	public String toString() {
 		return "message=" + message + ", messageNumber=" + messageNumber;

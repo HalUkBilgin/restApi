@@ -1,6 +1,7 @@
 package com.techproed.restapi03;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,9 +15,8 @@ public class SB13StudentBeanController {
 	public SB13StudentBeanController(SB12StudentBeanService studentService) {
 		this.studentService = studentService;
 	}
-	
-	@GetMapping(path="/api/v1/students")
-	public List<SB10StudentBean> studentList(){
+	@GetMapping(path = "/api/v1/allStudents")
+	public List<SB10StudentBean> getAllStudent(){
 		return studentService.getStudentList();
 	}
 }

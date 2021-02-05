@@ -1,4 +1,4 @@
-package com.techproed.restapi04;
+package com.techproed.restapi06;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -10,7 +10,7 @@ import javax.persistence.Transient;
 
 @Entity
 @Table(name = "students")
-public class SB15StudentBean {
+public class SB25StudentBean {
 	
 	@Id
 	private Long id;
@@ -20,9 +20,9 @@ public class SB15StudentBean {
 	@Transient
 	private Integer age;
 	
-	public SB15StudentBean() {
+	public SB25StudentBean() {
 	}
-	public SB15StudentBean(Long id, String name, String email, LocalDate dob) {
+	public SB25StudentBean(Long id, String name, String email, LocalDate dob) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -62,7 +62,8 @@ public class SB15StudentBean {
 	
 	@Override
 	public String toString() {
-		return "SB15StudentBean [id=" + id + ", name=" + name + ", email=" + email + ", dob=" + dob + ", age=" + age
+		return "SB25StudentBean [id=" + id + ", name=" + name + ", email=" + email + ", dob=" + dob + ", age=" + age
 				+ "]";
 	}
+
 }

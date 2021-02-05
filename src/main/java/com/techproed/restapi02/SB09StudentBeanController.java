@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SB08StudentBeanController {
+public class SB09StudentBeanController {
 	
-	private final SB09StudentBeanService studentService;
+	private final SB08StudentBeanService studentService;
 	
 	@Autowired
-	public SB08StudentBeanController(SB09StudentBeanService studentService) {
+	public SB09StudentBeanController(SB08StudentBeanService studentService) {
 		this.studentService = studentService;
 	}
 	

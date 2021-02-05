@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SB17StudentBeanService {
-
+	
 	private final SB16StudentBeanRepository studentRepository;
 	
 	@Autowired
@@ -17,4 +17,5 @@ public class SB17StudentBeanService {
 	public List<SB15StudentBean> getStudentList(){
 		return studentRepository.findAll();
 	}
+
 }

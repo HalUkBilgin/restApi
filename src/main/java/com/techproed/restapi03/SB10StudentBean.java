@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="students")
+@Table(name = "students")
 public class SB10StudentBean {
 	
 	@Id
@@ -59,7 +59,7 @@ public class SB10StudentBean {
 	
 	@Override
 	public String toString() {
-		return "SB07StudentBean [id=" + id + ", name=" + name + ", email=" + email + ", dob=" + dob + ", age=" + age
+		return "SB10StudentBean [id=" + id + ", name=" + name + ", email=" + email + ", dob=" + dob + ", age=" + age
 				+ "]";
 	}
 
